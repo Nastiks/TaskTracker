@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebTasks.Server", "WebTasks.Server\WebTasks.Server.csproj", "{088822EF-03EC-410E-B827-6C46BED3DE5A}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WebTasks.Shared", "WebTasks.Shared\WebTasks.Shared.shproj", "{A04BD161-FA1C-42FE-BAAF-49CC1ACCBD7C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{893B5C11-6645-4256-885C-559F082B5370}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{088822EF-03EC-410E-B827-6C46BED3DE5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{088822EF-03EC-410E-B827-6C46BED3DE5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{088822EF-03EC-410E-B827-6C46BED3DE5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{088822EF-03EC-410E-B827-6C46BED3DE5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB47CBAA-4B66-41C8-A6B6-C607FC4BEFC9}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		WebTasks.Shared\WebTasks.Shared.projitems*{088822ef-03ec-410e-b827-6c46bed3de5a}*SharedItemsImports = 5
+		WebTasks.Shared\WebTasks.Shared.projitems*{a04bd161-fa1c-42fe-baaf-49cc1accbd7c}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal
