@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebTasks.Server</name>
+    </assembly>
+    <members>
+        <member name="M:WebTasks.Server.Controllers.ProjectController.GetAll(Gridify.GridifyQuery)">
+            <summary>
+            Returns all project items. 
+            See https://alirezanet.github.io/Gridify/guide/ for filtering details.
+            </summary>
+            <param name="query">Filtering, sorting and paging options.</param>
+            <response code="200"> Successfully received data. </response>
+        </member>
+        <member name="M:WebTasks.Server.Controllers.ProjectController.GetById(System.Int32)">
+            <summary>
+            Returns project item by specified Id.
+            </summary>
+            <param name="projectId">Specified project Id.</param>
+            <response code="200"> The project was successfully received. </response>
+            <response code="404"> Project was not found. </response>
+        </member>
+        <member name="M:WebTasks.Server.Controllers.ProjectController.Create(WebTasks.Shared.Models.Public.PublicProjectItem)">
+            <summary>
+            Create a new project.
+            </summary>
+            <param name="item">New item model request.</param>
+            <response code="201"> The project has been created successfully. </response>
+            <response code="500"> Received entity contains bad values. </response>
+        </member>
+        <member name="M:WebTasks.Server.Controllers.ProjectController.DeleteById(System.Int32,System.Boolean)">
+            <summary>
+            Delete project item by specified Id.
+            </summary>
+            <param name="projectId">Specified project Id.</param>
+            <param name="deleteTasks">If "true" all project tasks will be deleted</param>
+            <response code="200"> The project was successfully deleted. </response>
+            <response code="404"> Project was not found. </response>
+        </member>
+        <member name="M:WebTasks.Server.Controllers.ProjectController.UpdateById(System.Int32,WebTasks.Shared.Models.Public.PublicProjectItem)">
+            <summary>
+            Update project item by specified Id.
+            </summary>
+            <param name="projectId">Specified project Id.</param>
+            <param name="item">New item model request.</param>
+            <response code="200"> The project was successfully updated. </response>
+            <response code="404"> Project was not found. </response>
+            <response code="500"> Received entity contains bad values. </response>
+        </member>
+        <member name="M:WebTasks.Server.Controllers.TaskController.GetAll(System.Int32)">
+            <summary>
+            Returns all tasks items.
+            </summary>
+            <param name="projectId">Specified project Id (optional).</param>
+            <response code="200"> Successfully received data. </response>
+            <response code="404"> Project was not found. </response>
+        </member>
+        <member name="M:WebTasks.Server.Controllers.TaskController.GetById(System.Int32)">
+            <summary>
+            Returns task item by specified Id.
+            </summary>
+            <param name="taskId">Specified task Id.</param>
+            <response code="200"> The task was successfully received. </response>
+            <response code="404"> Task was not found. </response>
+        </member>
+        <member name="M:WebTasks.Server.Controllers.TaskController.Create(WebTasks.Shared.Models.PublicTaskItem)">
+            <summary>
+            Create a new task.
+            </summary>
+            <param name="item">New item model request.</param>
+            <response code="201"> The task has been created successfully. </response>
+            <response code="500"> Received entity contains bad values. </response>
+        </member>
+        <member name="M:WebTasks.Server.Controllers.TaskController.DeleteById(System.Int32)">
+            <summary>
+            Delete task item by specified Id.
+            </summary>
+            <param name="taskId">Specified task Id.</param>
+            <response code="200"> The task was successfully deleted. </response>
+            <response code="404"> Task was not found. </response>
+        </member>
+        <member name="M:WebTasks.Server.Controllers.TaskController.UpdateById(System.Int32,WebTasks.Shared.Models.PublicTaskItem)">
+            <summary>
+            Update task item by specified Id.
+            </summary>
+            <param name="taskId">Specified task Id.</param>
+            <param name="item">New item model request.</param>
+            <response code="200"> The task was successfully updated. </response>
+            <response code="404"> Task was not found. </response>
+            <response code="500"> Received entity contains bad values. </response>
+        </member>
+        <member name="M:WebTasks.Server.Controllers.TaskController.UpdateTaskProject(System.Int32,System.Int32)">
+            <summary>
+            Update a project for a specific task.
+            </summary>
+            <param name="taskId">Specified task Id.</param>
+            <param name="projectId">Specified project Id.</param>
+            <response code="200"> The task project has been successfully updated. </response>
+            <response code="404"> Task was not found. </response>
+        </member>
+    </members>
+</doc>
